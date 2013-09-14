@@ -1,7 +1,7 @@
 function HtmlImageBlender(img) {
    var canvas = document.createElement('canvas');
-   canvas.width = img.width;
-   canvas.height = img.height;
+   canvas.width = img.naturalWidth;
+   canvas.height = img.naturalHeight;
    var ctx = canvas.getContext('2d');
    if(!ctx) return;
    ctx.drawImage(img, 0, 0);
